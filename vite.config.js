@@ -1,23 +1,41 @@
+/* eslint-disable import/named */
 import { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
-import pageData from './pageData';
-import routes from './routes';
-
-const handlebarsOptions = {
-	context: urlEnding => pageData[urlEnding],
-	partialDirectory: resolve('./src/partials'),
-};
+import { routes, pageData } from './vite.routes';
 
 export default {
-	root: resolve('./src'),
-	plugins: [
-		// inject({ $: 'jquery' }), // maybe jquery?
-		handlebars(handlebarsOptions),
-	],
-	build: {
-		outDir: '../dist',
-		rollupOptions: {
-			input: routes,
-		},
-	},
+    root: resolve('./src'),
+    plugins: [
+        // inject({ $: 'jquery' }), // maybe jquery?
+        handlebars({
+            context: (urlEnding) => pageData[urlEnding],
+            partialDirectory: resolve('./src/partials'),
+        }),
+    ],
+    build: {
+        outDir: '../dist',
+        assetsDir: 'assets',
+        output: {
+            preserveModules: true,
+        },
+        rollupOptions: {
+            input: routes,
+        },
+    },
+    css: {
+        postcss: {
+            plugins: [
+                {
+                    postcssPlugin: 'internal:charset-removal',
+                    AtRule: {
+                        charset: (atRule) => {
+                            if (atRule.name === 'charset') {
+                                atRule.remove();
+                            }
+                        },
+                    },
+                },
+            ],
+        },
+    },
 };

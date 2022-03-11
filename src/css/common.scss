@@ -1,5 +1,37 @@
-* {
-	body {
-		background-color: #333;
+$blue-purple: linear-gradient(20deg, rgba(34, 182, 195, 1) 0%, rgba(45, 253, 106, 1) 81%);
+$purple-blue: linear-gradient(20deg, rgba(45, 253, 106, 1) 0%, rgba(34, 182, 195, 1) 81%);
+
+body {
+	background: linear-gradient(20deg, rgba(34, 182, 195, 1) 0%, rgba(45, 253, 106, 1) 81%);
+	background-attachment: fixed;
+
+}
+#intro-container {
+	background-color: #1a1a1a;
+	margin-top: 20%;
+	max-width: 700px;
+
+	#intro-logo {
+		font-size: 70px;
 	}
 }
+
+.cooltext {
+	background: linear-gradient(20deg, rgba(75, 98, 255, 1) 0%, rgba(113, 20, 203, 1) 75%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.btn-link {
+	cursor: pointer;
+}
+
+// cool way to have a linear gradient to a border
+// #intro-container {
+// 	// padding: 16px;
+// 	color: white;
+// 	border-width: 1px;
+// 	border-style: solid;
+// 	border-image: linear-gradient(to bottom, rgba(34, 182, 195, 1), rgba(45, 253, 106, 1)) 1 10%;
+
+// }

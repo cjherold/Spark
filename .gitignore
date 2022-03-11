@@ -1,7 +1,9 @@
-
 node_modules
-.DS_Store
-.vscode/*
-logs
-*.log
 dist
+src/assets/img
+logs/*
+_notes
+.env
+.vscode
+.vscode-test
+.DS_Store

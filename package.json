@@ -1,15 +1,39 @@
 {
 	"name": "spark",
-	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
+	"description": "A shockingly fast and easy way to make a static site. Yes puns!",
 	"scripts": {
+		"start": "node app.js",
 		"dev": "vite",
-		"build": "vite build --emptyOutDir",
-		"preview": "vite preview"
+		"build": "vite build --emptyOutDir"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cjherold/Spark.git"
+	},
+	"author": "Christopher Herold",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cjherold/Spark/issues"
+	},
+	"homepage": "https://github.com/cjherold/Spark#readme",
+	"dependencies": {
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"express-handlebars": "^6.0.3"
 	},
 	"devDependencies": {
+		"@popperjs/core": "^2.11.2",
+		"bootstrap": "^5.1.3",
+		"bootstrap-icons": "^1.8.1",
+		"eslint": "^8.10.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-react": "^7.29.3",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"prettier": "^2.5.1",
 		"sass": "^1.49.9",
-		"vite": "^2.8.0",
+		"vite": "^2.8.6",
 		"vite-plugin-handlebars": "^1.6.0"
 	}
 }

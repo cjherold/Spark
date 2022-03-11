@@ -12,10 +12,7 @@ A shockingly fast and easy way to make a static site. Yes puns!
 -   jquery globally?
 -   bootstrap globally?
 -   tailwinds?
+-   svelte
 
 ---
 
-### add
-
--   npm add -D sass
--   npm add -D vite-plugin-handlebars
