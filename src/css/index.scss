@@ -1,0 +1,25 @@
+
+.container {
+    max-width: 900px;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 40% 100%;
+    }
+    50% {
+        background-position: 300% 200%;
+    }
+    100% {
+        background-position: 30% 0;
+    }
+}
+
+.btn-custom {
+    border: 1px solid #2dfd6a;
+    color: #fff;
+    &:hover {
+        border: none;
+        background-color: #2dfd6a;
+    }
+}

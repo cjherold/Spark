@@ -6,8 +6,8 @@ const routes = {
 };
 
 const pageData = {
-    '/': {
-        title: 'Main Page',
+    '/index': {
+        title: 'Home Page',
     },
     '/about': {
         title: 'About Page',

@@ -4,15 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{{title}}</title>
+
+		<script type="module" src="./js/styles/about.js"></script>
 	</head>
 	<body>
-		<h1>
-			<a href="/">Home</a>
-		</h1>
+		{{> navbar}}
 
-
-		{{> about-partial}}
-
-		<script type="module" src="./js/about.js"></script>
+		<script type="module" src="./js/common.js"></script>
 	</body>
 </html>

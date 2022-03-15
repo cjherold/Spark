@@ -4,38 +4,40 @@ import handlebars from 'vite-plugin-handlebars';
 import { routes, pageData } from './vite.routes';
 
 export default {
-    root: resolve('./src'),
-    plugins: [
-        // inject({ $: 'jquery' }), // maybe jquery?
-        handlebars({
-            context: (urlEnding) => pageData[urlEnding],
-            partialDirectory: resolve('./src/partials'),
-        }),
-    ],
-    build: {
-        outDir: '../dist',
-        assetsDir: 'assets',
-        output: {
-            preserveModules: true,
-        },
-        rollupOptions: {
-            input: routes,
-        },
-    },
-    css: {
-        postcss: {
-            plugins: [
-                {
-                    postcssPlugin: 'internal:charset-removal',
-                    AtRule: {
-                        charset: (atRule) => {
-                            if (atRule.name === 'charset') {
-                                atRule.remove();
-                            }
-                        },
-                    },
-                },
-            ],
-        },
-    },
+	root: resolve('./src'),
+	plugins: [
+		handlebars({
+			context(urlEnding) {
+				urlEnding = urlEnding.replace('.html', '');
+				return pageData[urlEnding];
+			},
+			partialDirectory: resolve('./src/partials'),
+		}),
+	],
+	build: {
+		outDir: '../dist',
+		assetsDir: 'assets',
+		output: {
+			preserveModules: true,
+		},
+		rollupOptions: {
+			input: routes,
+		},
+	},
+	css: {
+		postcss: {
+			plugins: [
+				{
+					postcssPlugin: 'internal:charset-removal',
+					AtRule: {
+						charset: atRule => {
+							if (atRule.name === 'charset') {
+								atRule.remove();
+							}
+						},
+					},
+				},
+			],
+		},
+	},
 };
