@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 $blue-purple: linear-gradient(20deg, #22b6c3 0%, #2dfd6a 81%);
 $purple-blue: linear-gradient(20deg, #2dfd6a 0%, #22b6c3 81%);
 $glow-colors: linear-gradient(45deg,
@@ -12,6 +14,7 @@ $dark-background: #1a1a1a;
 
 body {
     background-color: $dark-background;
+    font-family: 'Titan One', cursive;
 }
 .btn-link {
 	cursor: pointer;
@@ -25,7 +28,7 @@ body {
 // Thanks to "Techie Coder" on youtube for the glowing card idea
 .glow-container {
     position: relative;
-    background: #1a1a1a;
+    background: $dark-background;
     margin-top: 10%;
 }
 
@@ -42,6 +45,7 @@ body {
     z-index: -1;
     animation: animate 20s linear infinite;
 }
+
 .glow::after {
     filter: blur(20px);
     opacity: 0.5;

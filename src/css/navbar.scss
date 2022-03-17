@@ -1,7 +1,12 @@
 .navbar {
     .cooltext {
         &:hover {
-            box-shadow: 0px 0px 3px #22b6c39c;
+            box-shadow: 0px 0px 4px #22b6c39c;
         }
+    }
+    .navbar-toggler {
+        // padding: 3px;
+        // background: #ff00ff;
+        // border: solid 2px #4b62ff;
     }
 }

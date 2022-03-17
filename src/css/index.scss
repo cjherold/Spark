@@ -2,6 +2,12 @@
 .container {
     max-width: 900px;
 }
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 1rem;
+}
 
 @keyframes animate {
     0% {
@@ -21,5 +27,14 @@
     &:hover {
         border: none;
         background-color: #2dfd6a;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
