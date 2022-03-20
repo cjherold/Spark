@@ -13,8 +13,12 @@ $glow-colors: linear-gradient(45deg,
 $dark-background: #1a1a1a;
 
 body {
+    position: relative;
     background-color: $dark-background;
     font-family: 'Titan One', cursive;
+}
+.container {
+    max-width: 900px;
 }
 .btn-link {
 	cursor: pointer;
