@@ -1,13 +1,6 @@
 @import './common.scss';
 @import './navbar.scss';
 
-h1 {
-    font-size: 4rem;
-}
-p {
-    font-size: 1rem;
-}
-
 @keyframes animate {
     0% {
         background-position: 40% 100%;

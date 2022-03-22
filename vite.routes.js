@@ -2,15 +2,15 @@ import { resolve } from 'path';
 
 const routes = {
     main: resolve('/index.html'),
-    guide: resolve('/guide.html'),
+    about: resolve('/about.html'),
 };
 
 const pageData = {
     '/index': {
         title: 'Home Page',
     },
-    '/guide': {
-        title: 'Starting Guide',
+    '/about': {
+        title: 'About',
     },
 };
 
