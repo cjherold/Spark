@@ -27,10 +27,11 @@ npm start
 * Handlebars is supported
 * Development is done in the ./src folder
 * Compiles everything into the ./dist folder on build
-* Style imports go through ./src/js/styles
+* Import all styles through ./src/js/styles
 * Pages are in ./src and partials are in ./src/partials
 * Eslint is included by default but you can also remove the .eslintignore & .eslintrc.yml file
-* vite.routes.js routes pages and also contains the context for handlebars files
+* vite.routes.js handles different pages
+* vite.routes.js passes context to handlebars
 * Production uses express and runs app.js to host the dist folder
 * Images and icons are in the assets folder
 

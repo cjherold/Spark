@@ -23,6 +23,12 @@ body {
 .btn-link {
 	cursor: pointer;
 }
+.cooltext-green {
+    background: $blue-purple;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .cooltext {
     background: linear-gradient(20deg, #4b62ff 0%, #7114cb 75%);
 	background-clip: text;
