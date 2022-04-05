@@ -18,7 +18,6 @@
 	},
 	"homepage": "https://github.com/cjherold/Spark#readme",
 	"dependencies": {
-		"dotenv": "^16.0.0",
 		"express": "^4.17.3",
 		"express-handlebars": "^6.0.3"
 	},
