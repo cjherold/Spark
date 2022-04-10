@@ -1,4 +1,4 @@
-<img src="./src/assets/img/spark-logo.png" alt="Spark logo" style="border-radius:5px;">
+<img src="./src/assets/img/spark-horizontal.png" alt="Spark logo" style="border-radius:5px;">
 
 ###### A shockingly fast and easy way to make a static site. Yes puns!
 
