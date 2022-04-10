@@ -1,6 +1,5 @@
 node_modules
 dist
-src/assets/img
 logs/*
 _notes
 .env
