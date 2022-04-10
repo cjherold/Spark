@@ -7,3 +7,5 @@ _notes
 .vscode
 .vscode-test
 .DS_Store
+npm-debug.log
+

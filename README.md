@@ -1,9 +1,10 @@
-# Spark
+<img src="./src/assets/img/spark-logo.png" alt="Spark logo" style="border-radius:5px;">
 
 ###### A shockingly fast and easy way to make a static site. Yes puns!
 
-### This is still in development and things will most likely be cleaned up and changed slightly. Still, this is fully functional and fully awesome. Have fun!
 
+### This is still in development and things will most likely be cleaned up and changed slightly. Still, this is fully functional and fully awesome. Have fun!
+### Node v14.18.1
 
 ### Quickstart
 ```bash
