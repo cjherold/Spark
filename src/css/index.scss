@@ -13,20 +13,4 @@
     }
 }
 
-.btn-custom {
-    border: 1px solid #2dfd6a;
-    color: #fff;
-    &:hover {
-        border: none;
-        background-color: #2dfd6a;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 98%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 

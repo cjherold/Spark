@@ -19,6 +19,7 @@ body {
 }
 .container {
     max-width: 900px;
+
 }
 .btn-link {
 	cursor: pointer;
@@ -80,4 +81,15 @@ h1 {
 }
 p {
     font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .intro-title {
+        font-size: 12vw;
+    }
+    .container {
+        width: 96%;
+        margin-inline: auto;
+    }
 }

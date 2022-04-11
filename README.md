@@ -4,7 +4,8 @@
 
 
 ### This is still in development and things will most likely be cleaned up and changed slightly. Still, this is fully functional and fully awesome. Have fun!
-### Node v14.18.1
+### Node v14.18.1 
+* ATTENTION! If you have issues with HRM not working, make sure you use this version of node
 
 ### Quickstart
 ```bash
