@@ -4,8 +4,8 @@
 
 
 ### This is still in development and things will most likely be cleaned up and changed slightly. Still, this is fully functional and fully awesome. Have fun!
-### Node v14.18.1 
-* ATTENTION! If you have issues with HRM not working, make sure you use this version of node
+### Node v14.18.1
+ ⚠️ ATTENTION! If you have issues with HRM not working, make sure you use this version of node
 
 ### Quickstart
 ```bash
@@ -15,7 +15,7 @@ npm i
 # run development mode
 npm run dev
 
-# build
+# build (everything into a dist folder)
 npm run build
 
 # run production mode (simply hosts the dist folder)
@@ -61,8 +61,8 @@ const pageData = {
 ```
 
 ***
-### Hosting on Github Pages
-###### You can use this starter for Github pages by changing the "dist" folder to be named "docs". You can add the code below to app.js so that after you build and run "npm start" it will add the CNAME to the docs folder.
+### Hosting with Github Pages
+###### You can use this starter for Github pages by changing the "dist" folder to be named "docs". You can add the code below to app.js so that after you build and run "npm start" it will add the CNAME to the docs folder. View "mysite" to see a working example.
 ```js
 // Add CNAME to docs folder if not there already
 const files = fs.readdirSync('./docs');
@@ -77,7 +77,7 @@ if (!files.includes('CNAME')) {
 
 ### Possible future additions
 * I need to test tailwinds
-* Server side rendering instead of just hosting the dist folder
+* Full server side rendering support instead of just hosting the dist folder
 * More docs and examples
 * jquery globally instead of importing it
 * bootstrap globally?
@@ -102,7 +102,7 @@ app.set('views', './dist');
 
 ### Workaround for removing hashes from Vite's generated dist files
 
-###### (file name only, not hash within files containing imports)
+###### (removes hash from the file name only. Imports have hash values within the file so this won't exactly work for those.)
 ###### Add this to the top of the app.js file so it runs first
 
 ```js
